@@ -12,7 +12,7 @@ class SettingViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.title = "Tip Calculator"
         // Do any additional setup after loading the view.
     }
 

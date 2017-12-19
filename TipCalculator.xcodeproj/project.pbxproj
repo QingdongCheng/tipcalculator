@@ -14,6 +14,7 @@
 		7027D76C1FE815B70049EDA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7027D76A1FE815B70049EDA6 /* LaunchScreen.storyboard */; };
 		7027D7771FE815B80049EDA6 /* TipCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7027D7761FE815B80049EDA6 /* TipCalculatorTests.swift */; };
 		7027D7821FE815B80049EDA6 /* TipCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7027D7811FE815B80049EDA6 /* TipCalculatorUITests.swift */; };
+		7027D7941FE85D9B0049EDA6 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7027D7931FE85D9B0049EDA6 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		7027D77D1FE815B80049EDA6 /* TipCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7027D7811FE815B80049EDA6 /* TipCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCalculatorUITests.swift; sourceTree = "<group>"; };
 		7027D7831FE815B80049EDA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7027D7931FE85D9B0049EDA6 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +101,11 @@
 			children = (
 				7027D7611FE815B70049EDA6 /* AppDelegate.swift */,
 				7027D7631FE815B70049EDA6 /* ViewController.swift */,
-				7027D7651FE815B70049EDA6 /* Main.storyboard */,
 				7027D7681FE815B70049EDA6 /* Assets.xcassets */,
+				7027D7651FE815B70049EDA6 /* Main.storyboard */,
 				7027D76A1FE815B70049EDA6 /* LaunchScreen.storyboard */,
 				7027D76D1FE815B70049EDA6 /* Info.plist */,
+				7027D7931FE85D9B0049EDA6 /* SettingsViewController.swift */,
 			);
 			path = TipCalculator;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			files = (
 				7027D7641FE815B70049EDA6 /* ViewController.swift in Sources */,
 				7027D7621FE815B70049EDA6 /* AppDelegate.swift in Sources */,
+				7027D7941FE85D9B0049EDA6 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
