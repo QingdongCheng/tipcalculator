@@ -8,8 +8,11 @@
 
 import UIKit
 
+
 class ViewController: UIViewController {
 
+    @IBOutlet weak var totalView: UIView!
+    @IBOutlet weak var totalText: UILabel!
     @IBOutlet weak var tipText: UILabel!
     @IBOutlet weak var tipLabel: UILabel!
     @IBOutlet weak var totalLabel: UILabel!
@@ -39,16 +42,23 @@ class ViewController: UIViewController {
     }
     
     func setTheme() {
+        self.tipLabel.textColor = UIColor(red:192/255, green:142/255, blue:14/255, alpha:0.98)
+        self.tipText.textColor = UIColor(red:192/255, green:142/255, blue:14/255, alpha:0.98)
+        self.billField.textColor = UIColor(red:192/255, green:142/255, blue:14/255, alpha:0.98)
+        self.totalLabel.textColor = UIColor(red:192/255, green:142/255, blue:14/255, alpha:0.98)
+        self.totalText.textColor = UIColor(red:192/255, green:142/255, blue:14/255, alpha:0.98)
+        self.totalView.backgroundColor = UIColor(red:20/255, green:20/255, blue:20/255, alpha:0.8)
+        
         if defaults.integer(forKey: "themeSelection") == 1 {
             self.view.backgroundColor = UIColor(red:0/255, green:0/255, blue:0/255, alpha:0.8)
             self.billField.backgroundColor = UIColor(red:0/255, green:0/255, blue:0/255, alpha:0.8)
-            self.tipLabel.textColor = UIColor(red:192/255, green:142/255, blue:14/255, alpha:0.9)
-            self.tipText.textColor = UIColor(red:192/255, green:142/255, blue:14/255, alpha:0.9)
-            self.billField.textColor = UIColor(red:192/255, green:142/255, blue:14/255, alpha:0.9)
+            
         } else {
             self.view.backgroundColor = UIColor(red:92/255, green:201/255, blue:245/255, alpha:1)
             self.billField.backgroundColor = UIColor(red:92/255, green:201/255, blue:245/255, alpha:1)
         }
+        
+    
     }
     override func viewDidLoad() {
         super.viewDidLoad()
