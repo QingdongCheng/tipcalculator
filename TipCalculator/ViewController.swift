@@ -45,7 +45,7 @@ class ViewController: UIViewController {
             self.tipControl.alpha = 1
             self.totalView.alpha = 1
             self.tipControl.frame.origin.y = self.billField.frame.origin.y + 110
-            self.totalView.frame.origin.y = self.billField.frame.origin.y + 150
+            self.totalView.frame.origin.y = self.billField.frame.origin.y + 170
         }
     }
     
@@ -141,7 +141,7 @@ class ViewController: UIViewController {
             self.tipControl.alpha = 1
             self.totalView.alpha = 1
             self.tipControl.frame.origin.y = self.billField.frame.origin.y + 110
-            self.totalView.frame.origin.y = self.billField.frame.origin.y + 150
+            self.totalView.frame.origin.y = self.billField.frame.origin.y + 170
             
         }
         let tipPercentages = [0.18, 0.2, 0.25]

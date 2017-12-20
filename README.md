@@ -4,7 +4,7 @@ tipcalculator is a tip calculator application for iOS.
 
 Submitted by: Qingdong Cheng
 
-Time spent: 3 hours spent in total
+Time spent: 7 hours spent in total
 
 ## User Stories
 
@@ -16,7 +16,6 @@ The following **optional** features are implemented:
 * [ ] Settings page to change the default tip percentage.
 * [ ] UI animations
 * [ ] Remembering the bill amount across app restarts (if <10mins)
-* [ ] Using locale-specific currency and currency thousands separators.
 * [ ] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
 
 The following **additional** features are implemented:
@@ -27,13 +26,14 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://imgur.com/EZ3t9Lv' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+* Swift is new to me. I have to get used to Swift, not only the language but also the libraries.
+* The story board is a little tricky at first. After I am familiar with it, it is a lot of fun. I have quite a few experience in Android development. They are similar in many ways. On the other hand, they are different in many ways.
 
 ## License
 

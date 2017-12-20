@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="right" minimumFontSize="18" id="0bb-gN-TUF">
-                                <rect key="frame" x="40" y="103" width="295" height="88"/>
+                                <rect key="frame" x="40" y="98" width="295" height="88"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.35686274509803922" green="0.78823529411764703" blue="0.94509803921568625" alpha="1" colorSpace="deviceRGB"/>
                                 <rect key="contentStretch" x="0.25" y="0.25" width="1" height="1"/>
@@ -31,7 +31,7 @@
                                 </connections>
                             </textField>
                             <view contentMode="scaleToFill" misplaced="YES" id="rPf-PJ-GI9">
-                                <rect key="frame" x="16" y="286" width="343" height="139"/>
+                                <rect key="frame" x="16" y="281" width="343" height="139"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7vc-7m-5WV">
@@ -66,7 +66,7 @@
                                 <color key="backgroundColor" red="0.3529411764705882" green="0.78431372549019607" blue="0.78431372549019607" alpha="0.89330051369863017" colorSpace="deviceRGB"/>
                             </view>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="2jy-5n-JFV">
-                                <rect key="frame" x="49" y="236" width="277" height="29"/>
+                                <rect key="frame" x="49" y="231" width="277" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="18%"/>
@@ -167,7 +167,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nbY-ww-LK2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="766.5" y="147.5"/>
+            <point key="canvasLocation" x="795" y="148"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5Nk-oe-mKv">
