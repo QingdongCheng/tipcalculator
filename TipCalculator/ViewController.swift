@@ -39,6 +39,14 @@ class ViewController: UIViewController {
             calculate()
         }
         setTheme()
+        if billField.text!.isEmpty {
+            hideView()
+        } else {
+            self.tipControl.alpha = 1
+            self.totalView.alpha = 1
+            self.tipControl.frame.origin.y = self.billField.frame.origin.y + 110
+            self.totalView.frame.origin.y = self.billField.frame.origin.y + 150
+        }
     }
     
     func setTheme() {
@@ -62,10 +70,15 @@ class ViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
     }
 
+    func hideView() {
+        self.tipControl.frame.origin.y = self.billField.frame.origin.y + 100
+        self.totalView.frame.origin.y = self.billField.frame.origin.y + 120
+        self.tipControl.alpha = 0
+        self.totalView.alpha = 0
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -76,7 +89,7 @@ class ViewController: UIViewController {
         tipControl.selectedSegmentIndex = defaultTipSelection
     }
     @IBAction func onTap(_ sender: Any) {
-        view.endEditing(true)
+        //view.endEditing(true)
     }
 
     @IBAction func saveBill(_ sender: Any) {
@@ -116,6 +129,21 @@ class ViewController: UIViewController {
     }
     
     @IBAction func calculateTip(_ sender: Any?) {
+        if billField.text!.isEmpty {
+            UIView.animate(withDuration:0.8, animations: {
+                // This causes first view to fade in and second view to fade out
+                self.tipControl.alpha = 0
+                self.totalView.alpha = 0
+                self.tipControl.frame.origin.y = self.billField.frame.origin.y + 200
+                self.totalView.frame.origin.y = self.billField.frame.origin.y + 250
+            })
+        } else {
+            self.tipControl.alpha = 1
+            self.totalView.alpha = 1
+            self.tipControl.frame.origin.y = self.billField.frame.origin.y + 110
+            self.totalView.frame.origin.y = self.billField.frame.origin.y + 150
+            
+        }
         let tipPercentages = [0.18, 0.2, 0.25]
         let bill = Double(billField.text!) ?? 0
         let tip = bill * tipPercentages[tipControl.selectedSegmentIndex]
@@ -126,8 +154,6 @@ class ViewController: UIViewController {
         tipLabel.text = String(format:"$%.2f",tip)
         totalLabel.text = String(format:"$%.2f", total)
     }
-    
-   
     
 }
 
