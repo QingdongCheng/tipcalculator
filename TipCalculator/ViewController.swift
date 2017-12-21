@@ -50,12 +50,17 @@ class ViewController: UIViewController {
         setTheme()
         if billField.text!.isEmpty {
             hideView()
+            showPlaceHolder()
         } else {
             self.tipControl.alpha = 1
             self.totalView.alpha = 1
             self.tipControl.frame.origin.y = self.billField.frame.origin.y + 110
             self.totalView.frame.origin.y = self.billField.frame.origin.y + 170
         }
+    }
+    
+    func showPlaceHolder() {
+        billField.placeholder = NSLocale.current.currencySymbol
     }
     
     func setTheme() {
@@ -139,6 +144,7 @@ class ViewController: UIViewController {
     
     @IBAction func calculateTip(_ sender: Any?) {
         if billField.text!.isEmpty {
+            showPlaceHolder()
             UIView.animate(withDuration:0.8, animations: {
                 // This causes first view to fade in and second view to fade out
                 self.tipControl.alpha = 0
