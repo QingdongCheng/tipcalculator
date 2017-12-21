@@ -20,6 +20,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var tipControl: UISegmentedControl!
     let defaults = UserDefaults.standard
     
+    
+    func formatLocale(num:NSNumber) -> String {
+        let currencyFormatter = NumberFormatter()
+        currencyFormatter.usesGroupingSeparator = true
+        currencyFormatter.numberStyle = NumberFormatter.Style.currency
+        currencyFormatter.locale = NSLocale.current
+        return currencyFormatter.string(from: num)!
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
        
         billField.becomeFirstResponder()
@@ -124,8 +133,8 @@ class ViewController: UIViewController {
         let defaults = UserDefaults.standard
         defaults.set(bill, forKey: "billAmount")
         defaults.synchronize()
-        tipLabel.text = String(format:"$%.2f",tip)
-        totalLabel.text = String(format:"$%.2f", total)
+        tipLabel.text = formatLocale(num: tip as NSNumber)
+        totalLabel.text = formatLocale(num: total as NSNumber)
     }
     
     @IBAction func calculateTip(_ sender: Any?) {
@@ -151,8 +160,11 @@ class ViewController: UIViewController {
         let defaults = UserDefaults.standard
         defaults.set(bill, forKey: "billAmount")
         defaults.synchronize()
-        tipLabel.text = String(format:"$%.2f",tip)
-        totalLabel.text = String(format:"$%.2f", total)
+        
+       // billAmount.text = currencyFormatter.string(from:1230.90)
+        
+        tipLabel.text = formatLocale(num: tip as NSNumber)
+        totalLabel.text = formatLocale(num: total as NSNumber)
     }
     
 }
