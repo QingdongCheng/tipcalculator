@@ -23,8 +23,13 @@
                                 <color key="backgroundColor" red="0.35686274509803922" green="0.78823529411764703" blue="0.94509803921568625" alpha="1" colorSpace="deviceRGB"/>
                                 <rect key="contentStretch" x="0.25" y="0.25" width="1" height="1"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                                        <color key="value" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="editingChanged" id="m9R-OZ-blH"/>
                                     <action selector="saveBill:" destination="BYZ-38-t0r" eventType="editingChanged" id="Bee-Lj-38J"/>

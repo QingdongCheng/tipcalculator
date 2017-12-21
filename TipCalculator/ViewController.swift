@@ -72,8 +72,8 @@ class ViewController: UIViewController {
         self.totalView.backgroundColor = UIColor(red:20/255, green:20/255, blue:20/255, alpha:0.8)
         
         if defaults.integer(forKey: "themeSelection") == 1 {
-            self.view.backgroundColor = UIColor(red:0/255, green:0/255, blue:0/255, alpha:0.8)
-            self.billField.backgroundColor = UIColor(red:0/255, green:0/255, blue:0/255, alpha:0.8)
+            self.view.backgroundColor = UIColor(red:40/255, green:40/255, blue:40/255, alpha:1)
+            self.billField.backgroundColor = UIColor(red:40/255, green:40/255, blue:40/255, alpha:1)
             
         } else {
             self.view.backgroundColor = UIColor(red:92/255, green:201/255, blue:245/255, alpha:1)
@@ -102,6 +102,7 @@ class ViewController: UIViewController {
         let defaultTipSelection = defaults.integer(forKey: "defaultTipSelection")
         tipControl.selectedSegmentIndex = defaultTipSelection
     }
+    
     @IBAction func onTap(_ sender: Any) {
         //view.endEditing(true)
     }
@@ -172,6 +173,7 @@ class ViewController: UIViewController {
         tipLabel.text = formatLocale(num: tip as NSNumber)
         totalLabel.text = formatLocale(num: total as NSNumber)
     }
-    
+
 }
+
 
