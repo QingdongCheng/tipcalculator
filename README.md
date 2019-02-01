@@ -1,18 +1,13 @@
-# Pre-work - *tipcalculator*
+#*Tipcalculator*
 
-tipcalculator is a tip calculator application for iOS.
+Tipcalculator is a tip calculator application for iOS.
 
 Submitted by: Qingdong Cheng
 
 Time spent: 8 hours spent in total
 
 ## User Stories
-
-The following **required** functionality is complete:
-
 * [ ] User can enter a bill amount, choose a tip percentage, and see the tip and total values.
-
-The following **optional** features are implemented:
 * [ ] Settings page to change the default tip percentage.
 * [ ] UI animations
 * [ ] Using locale-specific currency and currency thousands separators.
